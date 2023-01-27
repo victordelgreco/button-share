@@ -1,0 +1,118 @@
+<!-- Container pai, todo o HTML foi desenvolvido dentro dessa div -->
+<div class="cotainer-button-share">
+<!-- Botão do compartilhar produto com uma tag img para estilizar o botão para o icone "compartilhar.png" -->
+  <button id="share-btn"> <img class="background-button-share" src="img/compartilhar.png" alt=""> </button>
+<!-- Lista de icones com todos os icones das redes sociais com o display: none para o evento onmouseover -->
+  <div id="list-icons-social-midias" style="display:none;">
+<!--   -->
+    <div class="div-icon-list">
+      <img class="icon-share-social-network" src="img/whatsapp.svg" alt="Facebook" />
+      <a class="link-social-network" href="http://www.facebook.com/sharer.php?u=URL" target="_blank">Whatsapp</a>
+
+    </div>
+    <div class="div-icon-list">
+      <img class="icon-share-social-network" src="img/instagram.svg" alt="Facebook" />
+      <a class="link-social-network" href="http://www.facebook.com/sharer.php?u=URL" target="_blank">Instagram</a>
+
+    </div>
+    <div class="div-icon-list">
+      <img class="icon-share-social-network" src="img/facebook.svg" alt="Facebook" />
+      <a class="link-social-network" href="http://www.facebook.com/sharer.php?u=URL" target="_blank">Facebook</a>
+
+    </div>
+    <div class="div-icon-list">
+      <img class="icon-share-social-network" src="img/pinterest.svg" alt="Facebook" />
+      <a class="link-social-network" href="http://www.facebook.com/sharer.php?u=URL" target="_blank">Pinterest</a>
+
+    </div>
+
+
+  </div>
+
+
+  <style>
+   /*Container pai*/
+     .cotainer-button-share {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+/*share icons img*/
+    .icon-share-social-network {
+      text-decoration: none;
+      width: 18px;
+      margin: 5px;
+      cursor: pointer;
+    }
+
+/*Tag do botão de media social*/
+    .link-social-network {
+      text-decoration: none;
+      font-size: 12px;
+      color: #555;
+      font-family: sans-serif;
+    }
+    
+    .link-social-network:hover {
+      color: rgb(0, 0, 0);
+    }
+
+/*CSS do botão compartilhar*/
+    .div-icon-list {
+      display: flex;
+      flex-direction: inherit;
+      align-items: center;
+      cursor: pointer;
+    }
+
+
+/*ID da div de icones*/
+    #list-icons-social-midias {
+      margin-top: 3px;
+      padding: 20px;
+      border: 1px solid #e4e4e4;
+      color: #555;
+      display: inline;
+    }
+
+/*ID do botão compartilhar*/
+    #share-btn {
+      border: none;
+      width: 25px;
+      height: 25px;
+      background: 0 0;
+      cursor: pointer;
+    }
+
+/* Estilização do background  do botão compartilhar*/
+    .background-button-share {
+      display: inline-block;
+      width: 25px;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+
+
+  </style>
+
+<!-- JS aplicado dentro do html pela TAG Script, utilizando o evento onmouseover e onmouseleave para aplicar o efeito do menu ao passar o mouse sobre o botão compartilhar. -->
+  <script>
+    document.getElementById('share-btn').onmouseover = function () {
+      if (document.getElementById('list-icons-social-midias').style.display == 'none') {
+        document.getElementById('list-icons-social-midias').style.display = 'inline-block';
+      }
+
+    }
+
+    document.getElementById('list-icons-social-midias').onmouseleave = function (){
+      if (document.getElementById('list-icons-social-midias').style.display == 'inline-block')
+        document.getElementById('list-icons-social-midias').style.display = 'none'
+      } 
+
+
+  </script>
+
+
+
+</div>

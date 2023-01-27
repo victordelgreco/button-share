@@ -1,0 +1,62 @@
+
+/*Container pai*/
+     .cotainer-button-share {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+/*share icons img*/
+    .icon-share-social-network {
+      text-decoration: none;
+      width: 20px;
+      margin: 5px;
+      cursor: pointer;
+    }
+
+/*Tag do botão de media social*/
+    .link-social-network {
+      text-decoration: none;
+      font-size: 12px;
+      color: #555;
+      font-family: sans-serif;
+    }
+    
+    .link-social-network:hover {
+      color: rgb(0, 0, 0);
+    }
+
+/*CSS do botão compartilhar*/
+    .div-icon-list {
+      display: flex;
+      flex-direction: inherit;
+      align-items: center;
+      cursor: pointer;
+    }
+
+
+/*ID da div de icones*/
+    #list-icons-social-midias {
+      margin-top: 3px;
+      padding: 20px;
+      border: 1px solid #e4e4e4;
+      color: #555;
+      display: inline;
+    }
+
+/*ID do botão compartilhar*/
+    #share-btn {
+      border: none;
+      width: 25px;
+      height: 25px;
+      background: 0 0;
+      cursor: pointer;
+    }
+
+/* Estilização do background  do botão compartilhar*/
+    .background-button-share {
+      display: inline-block;
+      width: 25px;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
